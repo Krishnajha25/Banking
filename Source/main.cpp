@@ -1,3 +1,10 @@
+//This is a simple program I made which does simple banking things like :
+//Check Balance
+//Withdraw Money
+//Deposit Money
+
+
+
 #include <iostream>
 #include<conio.h>
 #include <string>
@@ -6,7 +13,7 @@ class Banking {
 private:
     int bal=5000;
 public:
-   void withdraw()
+   void withdraw() //Whithdraw Money Function
     {
 
         int wamount;
@@ -16,7 +23,7 @@ public:
         cout<<"New balance in your account is : "<<bal;
     }
 
-   void deposit()
+   void deposit()  //Deposit Money Function
    {
 
         int damount;
@@ -30,7 +37,7 @@ public:
 
        cout<<"Your saving account balance is : "<<bal;
    }
-   void calc()
+   void calc()  //This Function checks the condition's and accordingly call the respective function.
    {
        int ch;
        cout<<"1. Withdraw"<<endl;
